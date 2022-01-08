@@ -1,5 +1,9 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var numbers = "0123456789"
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var lowercase = "abcdefghijklmnopqrstuvwxyz"
+var specialCharacter = "!@#$%^&*(){}[]\|/?,.~`:;'"
 
 function getPasswordOptions () {
   var pwdLength = parseInt(prompt("How long would you like your password to be"))
@@ -8,18 +12,18 @@ function getPasswordOptions () {
     alert("Password must be between 8 and 128 characters")
     return
 }
-  var numbers = confirm("Would you like to include numbers")
-  console.log(numbers)
+  //var numbers = confirm("Would you like to include numbers")
+  //if (numbers) {
+    //pwdLength += numbers
+  //}
 
-  var uppercase = confirm("You must include one uppercase letter")
+  //var uppercase = confirm("You must include one uppercase letter")
 
-  var lowercase = confirm("You must include one lowercase letter")
+  //var lowercase = confirm("You must include one lowercase letter")
 
-  var specialcharacter = confirm("You must use one special character")
-  if (){
-    alert("Must be ! @ # $ % & *")
-  }
-}
+  //var specialCharacter = confirm("You must use one special character")
+
+
 getPasswordOptions()
 
 // Write password to the #password input
@@ -35,4 +39,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", generatePassword); 
