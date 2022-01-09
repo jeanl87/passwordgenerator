@@ -1,8 +1,8 @@
 var generateBtn = document.querySelector("#generate");
-var numbers = ["0123456789"];
-var uppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-var lowercase = ["abcdefghijklmnopqrstuvwxyz"];
-var specialCharacter = ["!@#$%^&*(){}[]|/?,.~`:;'"];
+var numbers = document.querySelector["0123456789"];
+var uppercase = document.querySelector["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+var lowercase = document.querySelector["abcdefghijklmnopqrstuvwxyz"];
+var specialCharacter = document.querySelector["!@#$%^&*(){}[]|/?,.~`:;'"];
 
 function getPasswordOptions() {
   var pwdLength = parseInt(
@@ -15,19 +15,28 @@ function getPasswordOptions() {
     alert("Password must be between 8 and 128 characters");
    
   }
-  var nums= confirm("Would you like to include numbers")
+  var nums= confirm("You must include a number")
   if (nums) {
-  pwdLength += numbers
+  numbers = nums
   console.log(nums)
   }
+  var upper = confirm("You must include uppercase letter")
+  if (upper) {
+    uppercase = upper
+    console.log(upper)
+  }
 
-  //var uppercase = confirm("You must include one uppercase letter")
+  var lower = confirm("You must include lowercase letters")
+  if (lower) {
+    lowercase = lower
+    console.log(lower)
+  }
 
-  //var lowercase = confirm("You must include one lowercase letter")
+  var special = confirm("You must include a special character")
+  if (special) {
+    specialCharacter = special
+  }
 
-  //var specialCharacter = confirm("You must use one special character")
-
-  // getPasswordOptions()
 }
 // Write password to the #password input
 function generatePassword() {}
@@ -37,6 +46,7 @@ function writePassword() {
 
   passwordText.value = password;
 }
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", getPasswordOptions);
