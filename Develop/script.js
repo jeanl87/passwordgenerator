@@ -16,27 +16,20 @@ function getPasswordOptions() {
     alert("Password must be between 8 and 128 characters");
    
   }
-  var nums= confirm("You must include a number")
-  if (nums) {
-  numbers = nums
-  }
+  var numbers = confirm("You must include a number");{
 
-  var upper = confirm("You must include uppercase letter")
-  if (upper) {
-    uppercase = upper
-  }
+  numbers = ""; 
+  digits = "var numbers"; 
+  numbers += digits;
+  return numbers.digits
+  } 
+  var uppercase = confirm("You must include uppercase letter")
+  
+  var lowercase = confirm("You must include lowercase letters")
 
-  var lower = confirm("You must include lowercase letters")
-  if (lower) {
-    lowercase = lower
-  }
+  var specialCharacter = confirm("You must include a special character")
+  
 
-  var special = confirm("You must include a special character")
-  if (special) {
-    specialCharacter = special
-  }
-
-}
 // Write password to the #password input
 function generatePassword() {}
 function writePassword() {
