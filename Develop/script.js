@@ -3,13 +3,12 @@ var numberList = "0123456789";
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lower = "abcdefghijklmnopqrstuvwxyz"
 var specialC = "!@#$%^&*(){}[]|/?,.~`:;'";
-var potentialCharacters = ""
-var 
+var potentialCharacters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*(){}[]|/?,.~`:;'"
+var pwdLength = ""
 
-function generatePassword() {
+function getPasswordOptions() {
   var pwdLength = parseInt()
     prompt("How long would you like your password to be");
-}
 
   if (pwdLength < 8 || pwdLength > 128) {
     alert("Password must be between 8 and 128 characters");
@@ -49,4 +48,4 @@ function writePassword() {
 
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword); 
+generateBtn.addEventListener("click", getPasswordOptions); 
