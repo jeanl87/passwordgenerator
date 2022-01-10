@@ -4,10 +4,11 @@ var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lower = "abcdefghijklmnopqrstuvwxyz"
 var specialC = "!@#$%^&*(){}[]|/?,.~`:;'";
 var potentialCharacters = ""
+var 
 
 function generatePassword() {
-  var pwdLength = parseInt(
-    prompt("How long would you like your password to be"));
+  var pwdLength = parseInt()
+    prompt("How long would you like your password to be");
 }
 
   if (pwdLength < 8 || pwdLength > 128) {
